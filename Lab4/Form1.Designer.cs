@@ -62,7 +62,6 @@
             this.m1.Name = "m1";
             this.m1.Size = new System.Drawing.Size(93, 28);
             this.m1.TabIndex = 0;
-            this.m1.TextChanged += new System.EventHandler(this.m1_TextChanged);
             // 
             // m2
             // 
@@ -86,10 +85,10 @@
             // 
             // m4
             // 
-            this.m4.Location = new System.Drawing.Point(127, 166);
+            this.m4.Location = new System.Drawing.Point(127, 195);
             this.m4.Multiline = true;
             this.m4.Name = "m4";
-            this.m4.Size = new System.Drawing.Size(169, 139);
+            this.m4.Size = new System.Drawing.Size(169, 144);
             this.m4.TabIndex = 3;
             // 
             // label1
@@ -101,17 +100,16 @@
             this.label1.Size = new System.Drawing.Size(24, 14);
             this.label1.TabIndex = 4;
             this.label1.Text = "ชื่อ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(77, 169);
+            this.label2.Location = new System.Drawing.Point(38, 195);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 14);
+            this.label2.Size = new System.Drawing.Size(52, 14);
             this.label2.TabIndex = 5;
-            this.label2.Text = "รายชื่อ";
+            this.label2.Text = "รายชื่อ :";
             // 
             // label3
             // 
@@ -127,15 +125,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(38, 136);
+            this.label4.Location = new System.Drawing.Point(38, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 14);
+            this.label4.Size = new System.Drawing.Size(57, 14);
             this.label4.TabIndex = 7;
-            this.label4.Text = "จำนวนทั้งหมด";
+            this.label4.Text = "อายุรวม :";
             // 
             // m3
             // 
-            this.m3.Location = new System.Drawing.Point(127, 130);
+            this.m3.Location = new System.Drawing.Point(127, 151);
             this.m3.Multiline = true;
             this.m3.Name = "m3";
             this.m3.Size = new System.Drawing.Size(169, 27);
@@ -146,21 +144,21 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(269, 49);
+            this.label5.Location = new System.Drawing.Point(38, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 14);
+            this.label5.Size = new System.Drawing.Size(69, 14);
             this.label5.TabIndex = 10;
-            this.label5.Text = "GPA Max";
+            this.label5.Text = "GPA Max :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(272, 86);
+            this.label6.Location = new System.Drawing.Point(38, 74);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 14);
+            this.label6.Size = new System.Drawing.Size(66, 14);
             this.label6.TabIndex = 9;
-            this.label6.Text = "GPA Min";
+            this.label6.Text = "GPA Min :";
             // 
             // label7
             // 
@@ -200,11 +198,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(60, 99);
+            this.label8.Location = new System.Drawing.Point(38, 117);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 14);
+            this.label8.Size = new System.Drawing.Size(68, 14);
             this.label8.TabIndex = 16;
-            this.label8.Text = "GPA Avg";
+            this.label8.Text = "GPA Avg :";
             // 
             // label9
             // 
@@ -219,25 +217,25 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(320, 25);
+            this.label10.Location = new System.Drawing.Point(302, 40);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 14);
+            this.label10.Size = new System.Drawing.Size(135, 14);
             this.label10.TabIndex = 18;
-            this.label10.Text = "ชื่อ";
+            this.label10.Text = "ชื่อคนที่GPAมากที่สุด =";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(320, 62);
+            this.label11.Location = new System.Drawing.Point(302, 74);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 14);
+            this.label11.Size = new System.Drawing.Size(137, 14);
             this.label11.TabIndex = 17;
-            this.label11.Text = "ชื่อ";
+            this.label11.Text = "ชื่อคนที่GPAน้อยที่สุด =";
             // 
             // avg
             // 
-            this.avg.Location = new System.Drawing.Point(127, 96);
+            this.avg.Location = new System.Drawing.Point(127, 109);
             this.avg.Multiline = true;
             this.avg.Name = "avg";
             this.avg.Size = new System.Drawing.Size(169, 28);
@@ -254,18 +252,18 @@
             // 
             // name2
             // 
-            this.name2.Location = new System.Drawing.Point(350, 59);
+            this.name2.Location = new System.Drawing.Point(436, 71);
             this.name2.Multiline = true;
             this.name2.Name = "name2";
-            this.name2.Size = new System.Drawing.Size(129, 28);
+            this.name2.Size = new System.Drawing.Size(77, 28);
             this.name2.TabIndex = 23;
             // 
             // name1
             // 
-            this.name1.Location = new System.Drawing.Point(350, 22);
+            this.name1.Location = new System.Drawing.Point(436, 32);
             this.name1.Multiline = true;
             this.name1.Name = "name1";
-            this.name1.Size = new System.Drawing.Size(129, 28);
+            this.name1.Size = new System.Drawing.Size(77, 28);
             this.name1.TabIndex = 22;
             // 
             // groupBox1
@@ -276,13 +274,16 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.avg);
             this.groupBox1.Controls.Add(this.m3);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Location = new System.Drawing.Point(209, 21);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(209, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(557, 353);
+            this.groupBox1.Size = new System.Drawing.Size(555, 357);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ข้อมูลรายวิชา";
@@ -298,8 +299,6 @@
             this.Controls.Add(this.min);
             this.Controls.Add(this.max);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.n);

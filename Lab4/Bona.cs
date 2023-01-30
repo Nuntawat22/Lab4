@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lab4
 {
-    internal class Bona
+    public class Bona
     {
         private string name;
         private int age;
         private int brithYear;
-
-        public Bona(string name,int bYear) 
+        private double GPA;
+        public Bona(string name,int bYear,double gPA) 
         {
             this.name = name;
             this.brithYear = bYear;
             this.age = 2565 - bYear;
+            this.GPA = gPA;
         }
         public int getAge() 
         {
@@ -29,6 +30,10 @@ namespace Lab4
         public int getBY()
         {
             return this.brithYear;
+        }
+        public double getGPA()
+        {
+            return this.GPA;
         }
     }
 }
