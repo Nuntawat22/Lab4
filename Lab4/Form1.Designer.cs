@@ -28,68 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.m1 = new System.Windows.Forms.TextBox();
-            this.m2 = new System.Windows.Forms.TextBox();
-            this.n = new System.Windows.Forms.Button();
-            this.m4 = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbBirthyear = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tbContacts = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.m3 = new System.Windows.Forms.TextBox();
+            this.tbTotal = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.min = new System.Windows.Forms.TextBox();
-            this.max = new System.Windows.Forms.TextBox();
-            this.gpa = new System.Windows.Forms.TextBox();
+            this.tbMin = new System.Windows.Forms.TextBox();
+            this.tbMax = new System.Windows.Forms.TextBox();
+            this.tbGpa = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.avg = new System.Windows.Forms.TextBox();
+            this.tbAvg = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.name2 = new System.Windows.Forms.TextBox();
-            this.name1 = new System.Windows.Forms.TextBox();
+            this.tbNameLow = new System.Windows.Forms.TextBox();
+            this.tbNameHigh = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // m1
+            // tbName
             // 
-            this.m1.Location = new System.Drawing.Point(96, 49);
-            this.m1.Multiline = true;
-            this.m1.Name = "m1";
-            this.m1.Size = new System.Drawing.Size(93, 28);
-            this.m1.TabIndex = 0;
+            this.tbName.Location = new System.Drawing.Point(96, 49);
+            this.tbName.Multiline = true;
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(93, 28);
+            this.tbName.TabIndex = 0;
             // 
-            // m2
+            // tbBirthyear
             // 
-            this.m2.Location = new System.Drawing.Point(96, 83);
-            this.m2.Multiline = true;
-            this.m2.Name = "m2";
-            this.m2.Size = new System.Drawing.Size(93, 28);
-            this.m2.TabIndex = 1;
+            this.tbBirthyear.Location = new System.Drawing.Point(96, 83);
+            this.tbBirthyear.Multiline = true;
+            this.tbBirthyear.Name = "tbBirthyear";
+            this.tbBirthyear.Size = new System.Drawing.Size(93, 28);
+            this.tbBirthyear.TabIndex = 1;
             // 
-            // n
+            // button1
             // 
-            this.n.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.n.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n.Location = new System.Drawing.Point(96, 151);
-            this.n.Name = "n";
-            this.n.Size = new System.Drawing.Size(93, 41);
-            this.n.TabIndex = 2;
-            this.n.Text = "Add";
-            this.n.UseVisualStyleBackColor = false;
-            this.n.Click += new System.EventHandler(this.n_Click);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(96, 151);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 41);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // m4
+            // tbContacts
             // 
-            this.m4.Location = new System.Drawing.Point(127, 195);
-            this.m4.Multiline = true;
-            this.m4.Name = "m4";
-            this.m4.Size = new System.Drawing.Size(169, 144);
-            this.m4.TabIndex = 3;
+            this.tbContacts.Location = new System.Drawing.Point(127, 195);
+            this.tbContacts.Multiline = true;
+            this.tbContacts.Name = "tbContacts";
+            this.tbContacts.Size = new System.Drawing.Size(169, 144);
+            this.tbContacts.TabIndex = 3;
             // 
             // label1
             // 
@@ -131,14 +131,14 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "อายุรวม :";
             // 
-            // m3
+            // tbTotal
             // 
-            this.m3.Location = new System.Drawing.Point(127, 151);
-            this.m3.Multiline = true;
-            this.m3.Name = "m3";
-            this.m3.Size = new System.Drawing.Size(169, 27);
-            this.m3.TabIndex = 8;
-            this.m3.Text = "0";
+            this.tbTotal.Location = new System.Drawing.Point(127, 151);
+            this.tbTotal.Multiline = true;
+            this.tbTotal.Name = "tbTotal";
+            this.tbTotal.Size = new System.Drawing.Size(169, 27);
+            this.tbTotal.TabIndex = 8;
+            this.tbTotal.Text = "0";
             // 
             // label5
             // 
@@ -170,29 +170,29 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "GPA";
             // 
-            // min
+            // tbMin
             // 
-            this.min.Location = new System.Drawing.Point(336, 83);
-            this.min.Multiline = true;
-            this.min.Name = "min";
-            this.min.Size = new System.Drawing.Size(169, 28);
-            this.min.TabIndex = 13;
+            this.tbMin.Location = new System.Drawing.Point(336, 83);
+            this.tbMin.Multiline = true;
+            this.tbMin.Name = "tbMin";
+            this.tbMin.Size = new System.Drawing.Size(169, 28);
+            this.tbMin.TabIndex = 13;
             // 
-            // max
+            // tbMax
             // 
-            this.max.Location = new System.Drawing.Point(336, 46);
-            this.max.Multiline = true;
-            this.max.Name = "max";
-            this.max.Size = new System.Drawing.Size(169, 28);
-            this.max.TabIndex = 12;
+            this.tbMax.Location = new System.Drawing.Point(336, 46);
+            this.tbMax.Multiline = true;
+            this.tbMax.Name = "tbMax";
+            this.tbMax.Size = new System.Drawing.Size(169, 28);
+            this.tbMax.TabIndex = 12;
             // 
-            // gpa
+            // tbGpa
             // 
-            this.gpa.Location = new System.Drawing.Point(96, 117);
-            this.gpa.Multiline = true;
-            this.gpa.Name = "gpa";
-            this.gpa.Size = new System.Drawing.Size(93, 28);
-            this.gpa.TabIndex = 14;
+            this.tbGpa.Location = new System.Drawing.Point(96, 117);
+            this.tbGpa.Multiline = true;
+            this.tbGpa.Name = "tbGpa";
+            this.tbGpa.Size = new System.Drawing.Size(93, 28);
+            this.tbGpa.TabIndex = 14;
             // 
             // label8
             // 
@@ -233,13 +233,13 @@
             this.label11.TabIndex = 17;
             this.label11.Text = "ชื่อคนที่GPAน้อยที่สุด =";
             // 
-            // avg
+            // tbAvg
             // 
-            this.avg.Location = new System.Drawing.Point(127, 109);
-            this.avg.Multiline = true;
-            this.avg.Name = "avg";
-            this.avg.Size = new System.Drawing.Size(169, 28);
-            this.avg.TabIndex = 19;
+            this.tbAvg.Location = new System.Drawing.Point(127, 109);
+            this.tbAvg.Multiline = true;
+            this.tbAvg.Name = "tbAvg";
+            this.tbAvg.Size = new System.Drawing.Size(169, 28);
+            this.tbAvg.TabIndex = 19;
             // 
             // label12
             // 
@@ -250,35 +250,35 @@
             this.label12.Size = new System.Drawing.Size(0, 14);
             this.label12.TabIndex = 21;
             // 
-            // name2
+            // tbNameLow
             // 
-            this.name2.Location = new System.Drawing.Point(436, 71);
-            this.name2.Multiline = true;
-            this.name2.Name = "name2";
-            this.name2.Size = new System.Drawing.Size(77, 28);
-            this.name2.TabIndex = 23;
+            this.tbNameLow.Location = new System.Drawing.Point(436, 71);
+            this.tbNameLow.Multiline = true;
+            this.tbNameLow.Name = "tbNameLow";
+            this.tbNameLow.Size = new System.Drawing.Size(77, 28);
+            this.tbNameLow.TabIndex = 23;
             // 
-            // name1
+            // tbNameHigh
             // 
-            this.name1.Location = new System.Drawing.Point(436, 32);
-            this.name1.Multiline = true;
-            this.name1.Name = "name1";
-            this.name1.Size = new System.Drawing.Size(77, 28);
-            this.name1.TabIndex = 22;
+            this.tbNameHigh.Location = new System.Drawing.Point(436, 32);
+            this.tbNameHigh.Multiline = true;
+            this.tbNameHigh.Name = "tbNameHigh";
+            this.tbNameHigh.Size = new System.Drawing.Size(77, 28);
+            this.tbNameHigh.TabIndex = 22;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.name2);
-            this.groupBox1.Controls.Add(this.m4);
-            this.groupBox1.Controls.Add(this.name1);
+            this.groupBox1.Controls.Add(this.tbNameLow);
+            this.groupBox1.Controls.Add(this.tbContacts);
+            this.groupBox1.Controls.Add(this.tbNameHigh);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.avg);
-            this.groupBox1.Controls.Add(this.m3);
+            this.groupBox1.Controls.Add(this.tbAvg);
+            this.groupBox1.Controls.Add(this.tbTotal);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(209, 12);
@@ -295,15 +295,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.gpa);
-            this.Controls.Add(this.min);
-            this.Controls.Add(this.max);
+            this.Controls.Add(this.tbGpa);
+            this.Controls.Add(this.tbMin);
+            this.Controls.Add(this.tbMax);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.n);
-            this.Controls.Add(this.m2);
-            this.Controls.Add(this.m1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbBirthyear);
+            this.Controls.Add(this.tbName);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -316,29 +316,29 @@
 
         #endregion
 
-        private TextBox m1;
-        private TextBox m2;
-        private Button n;
-        private TextBox m4;
+        private TextBox tbName;
+        private TextBox tbBirthyear;
+        private Button button1;
+        private TextBox tbContacts;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox m3;
+        private TextBox tbTotal;
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox min;
-        private TextBox max;
-        private TextBox gpa;
+        private TextBox tbMin;
+        private TextBox tbMax;
+        private TextBox tbGpa;
         private Label label8;
         private Label label9;
         private Label label10;
         private Label label11;
-        private TextBox avg;
+        private TextBox tbAvg;
         private Label label12;
-        private TextBox name2;
-        private TextBox name1;
+        private TextBox tbNameLow;
+        private TextBox tbNameHigh;
         private GroupBox groupBox1;
     }
 }

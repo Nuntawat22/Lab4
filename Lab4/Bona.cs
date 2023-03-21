@@ -12,7 +12,8 @@ namespace Lab4
         private int age;
         private int brithYear;
         private double GPA;
-        public Bona(string name,int bYear,double gPA) 
+
+        public Bona(string name,int bYear , double gPA) 
         {
             this.name = name;
             this.brithYear = bYear;
