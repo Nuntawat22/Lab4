@@ -94,23 +94,42 @@ namespace Lab4
             }
             return Min;
         }
-        public string MaxB()
+        public string MaxHigh()
         {
-            string resultB = "";
-            double MaxB = 0;
+            string resultHigh = "";
+            double MaxHigh = 0;
             foreach (Bona b in this.bonas)
             {
 
-                if (MaxB >= double.Parse(b.getGPA().ToString()))
+                if (MaxHigh >= double.Parse(b.getGPA().ToString()))
                 {
 
-                    MaxB = double.Parse(b.getGPA().ToString());
-                    resultB = b.getName().ToString();
+                    MaxHigh = double.Parse(b.getGPA().ToString());
+                    resultHigh = b.getName().ToString();
 
                 }
 
             }
-            return resultB;
+            return resultHigh;
         }
+
+        /*public string LowHigh()
+        {
+            string resultLow = "";
+            double LowHigh = 0;
+            foreach (Bona b in this.bonas)
+            {
+
+                if (LowHigh >= double.Parse(b.getGPA().ToString()))
+                {
+
+                    LowHigh = double.Parse(b.getGPA().ToString());
+                    resultLow = b.getName().ToString();
+
+                }
+
+            }
+            return resultLow;
+        }*/
     }
 }

@@ -28,8 +28,8 @@ namespace Lab4
             this.tbAvg.Text = this.classroom.AvgGPA().ToString();
             this.tbMax.Text = this.classroom.MaxGPA().ToString();
             this.tbMin.Text = this.classroom.MinGPA().ToString();
-            this.tbNameHigh.Text = this.classroom.MaxB().ToString();
-
+            this.tbNameHigh.Text = this.classroom.MaxHigh().ToString();
+            //this.tbNameLow.Text = this.classroom.LowHigh().ToString();
 
             this.tbName.Text = "";
             this.tbBirthyear.Text = "";
