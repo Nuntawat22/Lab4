@@ -12,7 +12,10 @@ namespace Lab4
         private List<Bona> bonas = new List<Bona>();
 
         private Bona _minBona = new Bona("Max", 1, 9999);
+        private Bona Min = null;
+        private Bona Max = null;
         private int _ageSum = 0;
+        
 
         public Classroom(string name)
         {
@@ -22,11 +25,20 @@ namespace Lab4
         public void addBona2Class(Bona b)
         {
             this.bonas.Add(b);
+            this._ageSum += b.getAge();
 
-            /*if (newBona.getGPA()< _minBona.getGPA())
+            if (Max == null || b.getGPA() > Max.getGPA())
             {
-                this._minBona = newBona;
-            }*/
+
+                this.Max = b;
+
+            }
+            if (Min == null || b.getGPA() < Min.getGPA())
+            {
+
+                this.Min = b;
+
+            }
         }
 
         public string showAllBonainClass()
@@ -51,7 +63,7 @@ namespace Lab4
             return result;
         }
 
-        public double AvgGPA()
+        /*public double AvgGPA()
         {
             double result = 0;
             int MC = 0;
@@ -63,38 +75,37 @@ namespace Lab4
             }
             result = result / MC;
             return result;
+        }*/
+
+        public string NameMaxGPA()
+        {
+            return this.Max.getName();
         }
+
         public double MaxGPA()
         {
-            double Max = 0;
-            foreach (Bona b in this.bonas)
+            if (Max == null)
             {
-
-                if (Max < double.Parse(b.getGPA().ToString()))
-                {
-                    Max = double.Parse(b.getGPA().ToString());
-                }
-
+                return 0; // 
             }
-            return Max;
+            return this.Max.getGPA();
+        }
+
+        public string NameMinGPA()
+        {
+            return this.Min.getName();
         }
 
         public double MinGPA()
         {
-            //double B = b.getGPA().Tostring();
-            double Min = 0;
-            foreach (Bona b in this.bonas)
+            if (Min == null)
             {
-
-                if (Min < double.Parse(b.getGPA().ToString()))
-                {
-                    Min = double.Parse(b.getGPA().ToString());
-                }
-
+                return 0;
             }
-            return Min;
+            return this.Min.getGPA();
         }
-        public string MaxHigh()
+
+        /*public string MaxHigh()
         {
             string resultHigh = "";
             double MaxHigh = 0;
@@ -111,25 +122,31 @@ namespace Lab4
 
             }
             return resultHigh;
+        }*/
+
+        public int getBonaCount()
+        {
+            return this.bonas.Count;
         }
 
-        /*public string LowHigh()
+        public int getAgeSumaryOfThisClass()
         {
-            string resultLow = "";
-            double LowHigh = 0;
-            foreach (Bona b in this.bonas)
+            return this._ageSum;
+        }
+
+        public double getAgeAverage()
+        {
+            return this._ageSum / this.bonas.Count;
+        }
+
+        public double GPAAge()
+        {
+            double _avg = 0.0;
+            foreach (Bona p in this.bonas)
             {
-
-                if (LowHigh >= double.Parse(b.getGPA().ToString()))
-                {
-
-                    LowHigh = double.Parse(b.getGPA().ToString());
-                    resultLow = b.getName().ToString();
-
-                }
-
+                _avg += p.getGPA();
             }
-            return resultLow;
-        }*/
+            return _avg / this.bonas.Count;
+        }
     }
 }

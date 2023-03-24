@@ -25,10 +25,11 @@ namespace Lab4
 
             this.tbName.Text = this.classroom.showAllBonainClass();
             this.tbTotal.Text = this.classroom.TotalAge().ToString();
-            this.tbAvg.Text = this.classroom.AvgGPA().ToString();
+            this.tbAvg.Text = this.classroom.GPAAge().ToString();
             this.tbMax.Text = this.classroom.MaxGPA().ToString();
             this.tbMin.Text = this.classroom.MinGPA().ToString();
-            this.tbNameHigh.Text = this.classroom.MaxHigh().ToString();
+            this.tbNameHigh.Text = this.classroom.NameMaxGPA().ToString();
+            this.tbNameLow.Text = this.classroom.NameMinGPA().ToString();
             //this.tbNameLow.Text = this.classroom.LowHigh().ToString();
 
             this.tbName.Text = "";
