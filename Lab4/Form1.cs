@@ -23,7 +23,7 @@ namespace Lab4
             Bona bona = new Bona(name,iYear,G);
             this.classroom.addBona2Class(bona);
 
-            this.tbName.Text = this.classroom.showAllBonainClass();
+            this.tbContacts.Text = this.classroom.showAllBonainClass();
             this.tbTotal.Text = this.classroom.TotalAge().ToString();
             this.tbAvg.Text = this.classroom.GPAAge().ToString();
             this.tbMax.Text = this.classroom.MaxGPA().ToString();
